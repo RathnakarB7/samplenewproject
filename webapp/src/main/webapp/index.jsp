@@ -1,51 +1,63 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html> 
 <head>
-  <title>Customers</title>
-  <link href="site.css" rel="stylesheet">
-</head>
-<body>
-
-<nav id="nav01"></nav>
-
-<div id="main">
-  <h1>Customers</h1>
-  <div id="id01"></div>
-  <footer id="foot01"></footer>
-</div>
-
-<script src="script.js"></script>
-
-<script>
-var xmlhttp = new XMLHttpRequest();
-var url = "http://www.w3schools.com/website/customers.php";
-xmlhttp.onreadystatechange=function() {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-        myFunction(xmlhttp.responseText);
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
 }
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
-
-function myFunction(response) {
-    var obj = JSON.parse(response);
-    var arr = obj.records;
-    var i;
-    var out = "<table><tr><th>Name</th><th>City</th><th>Country</th></tr>";
-
-    for(i = 0; i < arr.length; i++) {
-        out += "<tr><td>" + 
-        arr[i].Name +
-        "</td><td>" +
-        arr[i].City +
-        "</td><td>" +
-        arr[i].Country +
-        "</td></tr>";
+button { 
+       background-color: #4CAF50; 
+       width: 100%;
+        color: orange; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+ form { 
+        border: 3px solid #f1f1f1; 
+    } 
+ input[type=text], input[type=password] { 
+        width: 100%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
     }
-    out += "</table>"
-    document.getElementById("id01").innerHTML = out;
-}
-</script>
-
-</body>
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+      
+   
+ .container { 
+        padding: 25px; 
+        background-color: lightblue;
+    } 
+</style> 
+</head>  
+<body>  
+    <center> <h1> Student Login Form </h1> </center> 
+    <form>
+        <div class="container"> 
+            <label>Username : </label> 
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label>Password : </label> 
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Login</button> 
+            <input type="checkbox" checked="checked"> Remember me 
+            <button type="button" class="cancelbtn"> Cancel</button> 
+            Forgot <a href="#"> password? </a> 
+        </div> 
+    </form>   
+</body>   
 </html>
+
