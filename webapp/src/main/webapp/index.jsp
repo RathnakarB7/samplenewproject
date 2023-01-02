@@ -1,49 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page in HTML</title>
-</head>
-<body>
-    <h1>Login form using HTML and CSS</h1>
-    <form action="">
-        <!-- Headings for the form -->
-        <div class="headingsContainer">
-            <h3>Sign in</h3>
-            <p>Sign in with your username and password</p>
-        </div>
-
-        <!-- Main container for all inputs -->
-        <div class="mainContainer">
-            <!-- Username -->
-            <label for="username">Your username</label>
-            <input type="text" placeholder="Enter Username" name="username" required>
-
-            <br><br>
-
-            <!-- Password -->
-            <label for="pswrd">Your password</label>
-            <input type="password" placeholder="Enter Password" name="pswrd" required>
-
-            <!-- sub container for the checkbox and forgot password link -->
-            <div class="subcontainer">
-                <label>
-                  <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-                <p class="forgotpsd"> <a href="#">Forgot Password?</a></p>
-            </div>
-
-
-            <!-- Submit button -->
-            <button type="submit">Login</button>
-
-            <!-- Sign up link -->
-            <p class="register">Not a member?  <a href="#">Register here!</a></p>
-
-        </div>
-
-    </form>
-</body>
-</html>
+<Html>  
+<head>   
+<title>  
+Registration Page  
+</title>  
+</head>  
+<body bgcolor="Lightskyblue">  
+<br>  
+<br>  
+<form>  
+  
+<label> Firstname </label>         
+<input type="text" name="firstname" size="15"/> <br> <br>  
+<label> Middlename: </label>     
+<input type="text" name="middlename" size="15"/> <br> <br>  
+<label> Lastname: </label>         
+<input type="text" name="lastname" size="15"/> <br> <br>  
+  
+<label>   
+Course :  
+</label>   
+<select>  
+<option value="Course">Course</option>  
+<option value="BCA">BCA</option>  
+<option value="BBA">BBA</option>  
+<option value="B.Tech">B.Tech</option>  
+<option value="MBA">MBA</option>  
+<option value="MCA">MCA</option>  
+<option value="M.Tech">M.Tech</option>  
+</select>  
+  
+<br>  
+<br>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" name="male"/> Male <br>  
+<input type="radio" name="female"/> Female <br>  
+<input type="radio" name="other"/> Other  
+<br>  
+<br>  
+  
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code"  value="+91" size="2"/>   
+<input type="text" name="phone" size="10"/> <br> <br>  
+Address  
+<br>  
+<textarea cols="80" rows="5" value="address">  
+</textarea>  
+<br> <br>  
+Email:  
+<input type="email" id="email" name="email"/> <br>    
+<br> <br>  
+Password:  
+<input type="Password" id="pass" name="pass"> <br>   
+<br> <br>  
+Re-type password:  
+<input type="Password" id="repass" name="repass"> <br> <br>  
+<input type="button" value="Submit"/>  
+</form>  
+</body>  
+</html>  
